@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+    --prim-orange: hsl(31, 77%, 52%);
+    --prim-cyan: hsl(184, 100%, 22%);
+    --prim-dark-cyan: hsl(179, 100%, 13%);
+    --neu-white: hsla(0, 0%, 100%, 0.75);
+    --neu-gray: hsl(0, 0%, 95%);
+  
+    --gray: #999;
+    --dark-gray: #555;
+    --black: #000;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--neu-gray);
+    font-size: 15px;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+    color: var(--neu-gray);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+div{
+    max-width: 280px;
+    height: 500px;
+    padding: 40px;
+    position: relative;
+}
+
+.sedans{
+    background-color: var(--prim-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs{
+    background-color: var(--prim-cyan);
+}
+
+.luxury{
+    background-color: var(--prim-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+img{
+    margin-bottom: 40px;
+}
+
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    color: var(--neu-gray);
+    margin-bottom: 1rem;
+}
+
+p{
+    color: var(--neu-white);
+    font-size: 15px;
+    line-height: 1.6rem;
+}
+
+button{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    width: 150px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid var(--neu-white);
+    font-family: inherit;
+    bottom: 40px;
+    transition: .5s;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+.sedans button{
+    color: var(--prim-orange);
+}
+
+.suvs button{
+    color: var(--prim-cyan);
+}
+
+.luxury button{
+    color: var(--prim-dark-cyan);
+}
+
+.code{
+    width: 300px;
+    display: flex;
+    position: absolute;
+    margin-left: 20px;
+    bottom: 10px;
+}
+
+.code p{
+    color: var(--prim-orange);
+}
+.code a{
+    color: var(--prim-cyan);
+    font-size: larger;
+    margin-left: 1px;
+    transition: .5s;
+}
