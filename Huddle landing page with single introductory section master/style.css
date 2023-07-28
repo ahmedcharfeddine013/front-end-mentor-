@@ -1,0 +1,125 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+@import url(https://fonts.google.com/specimen/Open+Sans);
+
+:root{
+    /* colors */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    margin: 50px;
+    display: flex;
+    max-width: 1440px;
+}
+
+.container{
+    margin-inline: 20px;
+}
+
+.content{
+    margin-top: 50px;
+    width: 1200px;
+    display: flex;  
+}
+
+h1{
+    font-family: "Open sans", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.typed{
+    position: relative;
+    margin: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+img{
+    margin-right: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #fff;
+    opacity: .9;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.btn{
+    padding-inline: 45px;
+    height: 50px;
+    border-radius: 50px;
+    color: var(--Violet);
+    background-color: #fff;
+    font-size: 15px;
+    border: none;
+    box-shadow: 1px 0px 27px 0px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 1px 0px 27px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 1px 0px 27px 0px rgba(0,0,0,0.39);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+    font-size: larger;
+}
+
+@media screen and (max-width: 375px){
+
+    body{
+        background: url(images/bg-mobile.svg);
+        background-color: var(--Violet);
+        margin: 3%;
+        background-size: cover;
+    }
+
+    .content{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .logo{
+        width: 45%;
+        margin-top: 15px;
+    }
+
+    .typed{
+        text-align: center;
+        line-height: 1.5;
+        margin-top: 30px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 18px;
+        margin: 0 -27px;
+    }
+
+    .btn{
+        margin-top: 25px;
+        padding-inline: 90px;
+    }
+}
